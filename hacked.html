@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hacked by ManzsMoz</title>
+<style>
+  body { margin:0; background:#000; color:#0F0; font-family:Courier New, monospace; overflow:hidden; }
+  .center { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; }
+  h1 { font-size:3em; text-shadow:0 0 10px #0F0; animation:glow 1s infinite alternate; }
+  p { margin-top:10px; }
+  img { width:200px; border-radius:50%; border:3px solid #0F0; box-shadow:0 0 20px #0F0; }
+  @keyframes glow { from{ text-shadow:0 0 10px #0F0; } to{ text-shadow:0 0 20px #0F0; } }
+  button { background:#0F0; color:#000; border:none; padding:10px 20px; margin:5px; border-radius:5px; cursor:pointer; }
+  button:hover { background:#090; }
+</style>
+</head>
+<body>
+<div class="center">
+  <img src="manzs.jpg" alt="Anonymous">
+  <h1>Hacked by ManzsModz</h1>
+  <p>Perkenalkan nama saya adalah ManzsModzVip, saya bukanlah raja, saya hanya seorang pemula yang tidak tahu apa-apa!</p>
+  <div>
+    <button onclick="audio.play()">Play</button>
+    <button onclick="audio.pause(); audio.currentTime=0;">Stop</button>
+  </div>
+</div>
+<audio id="audio" loop>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+<script>const audio=document.getElementById('audio');</script>
+</body>
+</html>
